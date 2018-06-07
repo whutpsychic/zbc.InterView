@@ -136,7 +136,7 @@ c();
 (3)服务器响应请求
 (4)浏览器加载/渲染界面
 
-![浏览器 timeline图片](https://github.com/whutpsychic/zbc.InterView/media/llq-timeline.png)
+![浏览器 timeline图片](https://github.com/whutpsychic/zbc.InterView/tree/master/media/llq-timeline.png)
 
 2.浏览器组成
 
