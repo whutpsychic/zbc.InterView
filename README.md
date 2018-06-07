@@ -136,9 +136,7 @@ c();
 (3)服务器响应请求
 (4)浏览器加载/渲染界面
 
-<div align="center">
 ![浏览器 timeline图片](https://github.com/whutpsychic/zbc.InterView/blob/master/media/llq-timeline.png?raw=true)
-</div>
 
 2.浏览器组成
 
@@ -163,6 +161,7 @@ c();
 (7)Data Persistence
 持久层。浏览器需要把所有数据存到硬盘上，如cookies，图片，css等。新的HTML规范 (HTML5) 规定了一个完整（虽然轻量级）的浏览器中的数据库：’web database’
 
+![浏览器 组成](https://github.com/whutpsychic/zbc.InterView/blob/master/media/llq-constructor.png?raw=true)
 
 3.浏览器渲染过程
 
@@ -173,6 +172,8 @@ c();
 (3)布局渲染树
 
 (4)绘制渲染树
+
+![浏览器 渲染过程](https://github.com/whutpsychic/zbc.InterView/blob/master/media/llq-render.png?raw=true)
 
 
 
