@@ -116,6 +116,79 @@ c();
 7.包装相关功能
 
 
+----
+----
+
+
+
+## 杂项 ##
+
+### 1.浏览器工作原理 ###
+
+[原文地址（简版）](https://www.jianshu.com/p/4a942a7dc153)
+[原文地址（精版）](https://www.cnblogs.com/rainy-shurun/p/5603686.html)
+
+
+1.浏览器 timeline （输入完url回车之后）
+
+(1)发起请求（URL解析/DNS解析）
+(2)网络连接3次握手
+(3)服务器响应请求
+(4)浏览器加载/渲染界面
+
+![浏览器 timeline图片](https://github.com/whutpsychic/zbc.InterView/media/llq-timeline.png)
+
+2.浏览器组成
+
+(1)User Interface
+定义了一些常用的浏览器插件
+
+(2)Browser engine
+平台应用的相关借口，在用户界面和呈现引擎之间传送指令
+
+(3)Rendering engine
+处理HTML 和 CSS 的解析与渲染
+
+(4)Networking
+处理网络请求
+
+(5)JavaScript Interpreter
+解析和执行JS 代码
+
+(6)UI Backend
+绘制基础元件，如组合框与窗口。它提供平台无关的接口，内部使用操作系统的相应实现
+
+(7)Data Persistence
+持久层。浏览器需要把所有数据存到硬盘上，如cookies，图片，css等。新的HTML规范 (HTML5) 规定了一个完整（虽然轻量级）的浏览器中的数据库：’web database’
+
+
+3.浏览器渲染过程
+
+(1)解析html 为DOM 树
+
+(2)渲染树结构
+
+(3)布局渲染树
+
+(4)绘制渲染树
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
