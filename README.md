@@ -116,6 +116,29 @@ c();
 7.包装相关功能
 
 
+## JS 异步执行 ##
+
+
+
+
+
+
+## 比较 instanceof 和 typeof 区别 ##
+
+instanceof 会返回 boolean 值，用于表示这个对象是否属于某构造函数的实例。
+typeof 会返回 number,boolean,string,function,object,undefined 字符串，用于表示这个对象属于什么类型。
+
+另外 typeof Array/null = object 
+
+
+## 谈谈垃圾回收机制方式及内存管理  ##
+
+
+
+
+
+
+
 ----
 ----
 
@@ -187,7 +210,19 @@ c();
 
 
 
+## 什么是跨域？ ##
 
+由于浏览器同源策略，凡是发送请求url的协议、域名、端口三者之间任意一与当前页面地址不同即为跨域。存在跨域的情况：
+
+1.网络协议不同，如http协议访问https协议。
+
+2.端口不同，如80端口访问8080端口。
+
+3.域名不同，如qianduanblog.com访问baidu.com。
+
+4.子域名不同，如abc.qianduanblog.com访问def.qianduanblog.com。
+
+5.域名和域名对应ip,如www.a.com访问20.205.28.90.
 
 
 
