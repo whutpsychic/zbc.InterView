@@ -111,6 +111,34 @@ map.get(['a']) // undefined
 遍历方法：keys（）、values（）、entries（）、forEach（）
 
 
+## Promise 函数基本用法 ##
+
+```
+const promiseGetFile = (str, ms) => {
+
+  return new Promise(
+    function (resolved, rejected) {
+      setTimeout(function () {
+        console.log(str)
+        resolved();
+      }, ms)
+
+    })
+}
+
+const _pro = promiseGetFile("hehe", 2000);
+
+_pro.then(
+  function () {
+    setTimeout(function () { console.log('resolved 1500') }, 3000);
+  },
+
+  function () { console.log('error'); }
+)
+
+
+```
+
 
 
 

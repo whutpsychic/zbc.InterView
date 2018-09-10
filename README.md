@@ -218,65 +218,42 @@ IE7中，垃圾回收器会根据内存分配量与程序占用内存的比例�
         }   
 ```
 
+
+## typeof 返回什么数据类型 ##
+
+　　undefined
+
+　　string
+
+　　boolean
+
+　　number
+
+　　symbol(ES6)
+
+　　Object
+
+　　Function
+
+## 如何阻止事件冒泡和默认事件 ##
+
+[原文地址](https://blog.csdn.net/wxl1555/article/details/53128966)
+
+1.event.stopPropagation()方法
+
+这是阻止事件的冒泡方法，不让事件向documen上蔓延，但是默认事件仍然会执行，当你掉用这个方法的时候，如果点击一个连接，这个连接仍然会被打开，
+
+2.event.preventDefault()方法
+
+这是阻止默认事件的方法，调用此方法是，连接不会被打开，但是会发生冒泡，冒泡会传递到上一层的父元素；
+
+3.return false  ；
+
+这个方法比较暴力，他会同时阻止事件冒泡也会阻止默认事件；写上此代码，连接不会被打开，事件也不会传递到上一层的父元素；可以理解为return false就等于同时调用了event.stopPropagation()和event.preventDefault()
+
+
 ----
 ----
-
-# CSS #
-
-1.比较 inline inline-block block 的区别
-
-inline:
-
-使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行. 
-不能更改元素的height，width的值，大小由内容撑开. 
-可以使用padding，margin的left和right产生边距效果，但是top和bottom就不行.
-
-block:
-
-使元素变成块级元素，独占一行，在不设置自己的宽度的情况下，块级元素会默认填满父级元素的宽度. 
-能够改变元素的height，width的值. 
-可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.
-
- inline-block:
-
-结合了inline与block的一些特点，结合了上述inline的第1个特点和block的第2,3个特点.
-
-
-inline：
-
-inline元素无法设置宽高，如何解决，此时可以使用 float （left/right）解决。
-
-
-
-2.谈谈 bfc 
-
-[原文地址](https://blog.csdn.net/TWFKXP/article/details/80574987)
-
-
-BFC (Block formatting context) “块级格式化上下文”
-
-它是页面中的一块渲染区域，有一套渲染规则，决定了其子元素如何布局，以及和其他元素之间的关系和作用。
-
-满足下列条件之一就可触发BFC
-
-　　【1】根元素，即HTML元素 
-　　【2】float的值不为none 
-　　???xxx【3】overflow的值不为visible 
-　　【4】display的值为inline-block、table-cell、table-caption 
-　　【5】position的值为absolute或fixed
-
-
-特性
-
-【1】阻止垂直外边距（margin-top、margin-bottom）折叠
-
-
-【2】包含浮动元素 
-可以包含它内部的所有元素，包括浮动元素——因此一清除内部浮动
-
-
-
-
 
 
 
@@ -431,5 +408,25 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 
 第三、对用户进行筛选
 然后就是要对这些用户进行筛选，用户的选择一定要具有代表性，要选择一部分的新用户和一部分的老用户来交替使用产品，还有就是选择的用户要具有敢问好问的精神，善于发现才能发现问题。选择完用户就是产品系统的部署，然后就是对用户参与的结果进行数据分析，找出产品存在的问题。
+
+
+## cookie session localStorage ##
+
+[原文地址](https://www.cnblogs.com/pengc/p/8714475.html)
+
+1、保持状态：cookie保存在浏览器端，session保存在服务器端
+
+2、存储内容：cookie只能保存字符串类型，以文本的方式；session通过类似与Hashtable的数据结构来保存，能支持任何类型的对象(session中可含有多个对象)
+
+3、存储的大小：cookie：单个cookie保存的数据不能超过4kb；session大小没有限制。
+
+4、安全性： session 更安全
+
+
+这两者的区别在于，sessionStorage为临时保存，而localStorage为永久保存。
+
+
+
+
 
 
