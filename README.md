@@ -426,6 +426,22 @@ TCP（Transmission Control Protocol 传输控制协议）是一种面向连接�
 这两者的区别在于，sessionStorage为临时保存，而localStorage为永久保存。
 
 
+## git 并行开发原理 ##
+
+[原文地址](https://www.cnblogs.com/cb0327/p/5066685.html)
+
+1. 工作区
+
+2. 缓存区(基本上就是用来解决冲突的)
+
+3. 本地仓库
+
+4. 远程仓库
+
+
+
+
+
 
 
 
